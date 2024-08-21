@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ControlMigracion.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .menu li {
+            float: left;
+        }
+
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- Menú Horizontal -->
+            <ul class="menu">
+                <li><a href="Default.aspx">Inicio</a></li>
+                <li><a href="RegistrarViajero.aspx">Registrar Viajero</a></li>
+                <li><a href="VerViajeros.aspx">Ver Viajeros</a></li>
+                <li><a href="RegistrarEntrada.aspx">Registrar Entrada</a></li>
+                <li><a href="RegistrarSalida.aspx">Registrar Salida</a></li>
+            </ul>
+
+            <!-- Contenido de la Página -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+
